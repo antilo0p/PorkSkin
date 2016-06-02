@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -11,7 +21,10 @@
         android:textStyle="bold"
         android:clickable="false"
 
-        />
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp" />
 
     <Space
 
@@ -28,7 +41,9 @@
         android:clickable="false"
 
         android:textColor="@color/colorAccent"
-        android:typeface="normal" />
+        android:typeface="sans"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp" />
 
     <Space
         android:layout_width="match_parent"
@@ -42,7 +57,10 @@
         android:id="@+id/editText"
         android:text="@string/acerca_dieta"
         android:textAlignment="inherit"
-        android:inputType="none" />
+        android:inputType="none"
+        android:typeface="serif"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp" />
 
     <Space
         android:layout_width="match_parent"
@@ -57,7 +75,10 @@
         android:clickable="false"
 
         android:textStyle="bold"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="10dp"
+        android:typeface="sans"
+        android:textSize="22sp" />
 
     <Space
         android:layout_width="match_parent"
@@ -71,7 +92,14 @@
         android:textAlignment="inherit"
         android:clickable="false"
 
-        android:inputType="none" />
+        android:inputType="none"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_marginLeft="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,12 +107,40 @@
         android:id="@+id/editText3"
         android:clickable="false"
 
-        android:text="@string/advertencia_tiempo" />
+        android:text="@string/advertencia_tiempo"
+        android:typeface="serif"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/diabetes"
+        android:id="@+id/textView3"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="10dp"
+        android:typeface="sans"
+        android:textSize="22sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/editText4"
         android:clickable="false"
-        android:text="@string/advertencia_diabetes" />
+            android:text="@string/advertencia_diabetes"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp" />
 </LinearLayout>
+</ScrollView>

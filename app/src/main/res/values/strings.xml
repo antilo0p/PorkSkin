@@ -52,7 +52,7 @@
     <string name="frag_strStatus">%1$s Weeks</string>
     <string name="frag_strSoon">Proximamente</string>
     <string name="frag_strPayVersionReq">Disponible en version de pago</string>
-    <string name="recomendaciones_de_salud">Recomendaciones de Salud</string>
+    <string name="recomendaciones_de_salud">Toma en cuenta lo siguiente:</string>
     <string name="dieta_no_recomendada">Dieta no recomendada</string>
     <string name="acerca_de_la_dieta">Acerca de la Dieta</string>
     <string name="acerca_dieta">Esta dieta esta basada en la dieta Atkins por lo que las mismas precauciones se tienen que tomar, algunas de esas precauciones se mencionan a continuacion</string>
@@ -60,4 +60,5 @@
     <string name="precaucionesText">Antes de iniciar una dieta Atkins, debe ser evaluado por un médico en busca de posibles patologías que contraindiquen el uso de una dieta baja en carbohidratos y alta en proteinas y grasas como la dieta Atkins.</string>
     <string name="advertencia_tiempo">No utilice la dieta por tiempo prolongado, el tiempo adecuado es de un mes, consulte a un nutriologo si necesita bajar mas de peso</string>
     <string name="advertencia_diabetes">Si tienes diabetes consulta a tu medico antes de hacer la dieta</string>
+    <string name="diabetes">Personas con Diabetes</string>
 </resources>
