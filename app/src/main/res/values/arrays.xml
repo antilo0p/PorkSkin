@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m1">
+        <item>Huevos con Queso, La cantidad de huevos que desees y la cantidad que quieras de queso, puedes usar aceite o mantequilla y acompañar con chiles jalapeños</item>
+        <item>Carne, Cualquier carne asada o frita tanto como quieras, con aceite o mantequilla, medio limon</item>
+        <item>Carne o Pollo,  Cualquier carne o pollo asado o frito, con aceite o mantequilla, medio limon</item>
+    </string-array>
+    <string-array name="d1">
+        <item>La cantidad de huevos que desees y la cantidad que quieras de queso, puedes usar aceite o mantequilla y acompañar con chiles jalapeños</item>
+        <item>Cualquier carne asada o frita tanto como quieras, con aceite o mantequilla, medio limon</item>
+        <item>Cualquier carne o pollo asado o frito, con aceite o mantequilla, medio limon</item>
+    </string-array>
+    <string-array name="img1">
+        <item>@drawable/eggs</item>
+        <item>@drawable/bgribeye</item>
+        // TODO: UPDATE with Proper Image below
+        <item>@drawable/chiken</item>
+    </string-array>
+    <string-array name="carnehuevos_imgs">
+        <item>@drawable/carnehuevos</item>
+    </string-array>
+    <string-array name="huevos_imgs">
+        <item>@drawable/eggs</item>
+        <item>@drawable/omelette</item>
+    </string-array>
+    <string-array name="bistec_imgs">
+        <item>@drawable/bgribeye</item>
+        <item>@drawable/bistecres</item>
+    </string-array>
+    <string-array name="bistecqueso_imgs">
+        <item>@drawable/bistecqueso</item>
+        <item>@drawable/fileteresqueso</item>
+    </string-array>
+    <string-array name="pollo_imgs">
+        <item>@drawable/pollo</item>
+        <item>@drawable/chiken</item>
+    </string-array>
+    <string-array name="puerco_imgs">
+        <item>@drawable/chuleta</item>
+        <item>@drawable/puercotocino</item>
+    </string-array>
+    <string-array name="pescado_imgs">
+        <item>@drawable/pescado</item>
+    </string-array>
+    <string-array name="atun_imgs">
+        <item>@drawable/atun</item>
+    </string-array>
+    <string-array name="burguer_imgs">
+        <item>@drawable/burgers</item>
+        <item>@drawable/burguer</item>
+    </string-array>
+    <string-array name="frutas_imgs">
+        <item>@drawable/frutas</item>
+        <item>@drawable/frutas2</item>
+    </string-array>
+    <string-array name="frias_imgs">
+        <item>@drawable/carmesfrias</item>
+        <item>@drawable/quesosfrias</item>
+    </string-array>
+</resources>

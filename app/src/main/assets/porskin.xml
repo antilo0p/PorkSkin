@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<porskin>
+    <semana num="1" fase="Induccion">
+        <dia num="1">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="bistec_imgs">Bistec de Res</comida>
+            <cena img="bistec_imgs" alt="si" opcion="Pollo" opcion_img="pollo_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="2">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="burguer_imgs">Hamburguesa</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="3">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="bistec_imgs">Bistec de Res</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="4">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+        <dia num="5">
+            <desayuno  img="bistec_imgs">Bistec de Res</desayuno>
+            <comida alt="si" img="carnehuevos_imgs" opcion="Pescado" opcion_img="pescado_imgs">Carne deshebrada con Huevo</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="6">
+            <desayuno img="bistec_imgs">Bistec de Res</desayuno>
+            <comida img="pescado_imgs" alt="si"  opcion="Pollo" opcion_img="pollo_imgs">Pescado</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="7">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+    </semana>
+    <semana num="2" fase="Induccion 2">
+        <dia num="1">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+        <dia num="2">
+            <desayuno img="atun_imgs">Atun con Jamon</desayuno>
+            <comida img="bistecqueso_imgs">Bistec de Res con Queso</comida>
+            <cena img="frias_imgs">Queso con Carnes Frias</cena>
+        </dia>
+        <dia num="3">
+            <desayuno img="huevos_imgs">Huevos con Carnes Frias</desayuno>
+            <comida img="puerco_imgs">Puerco con Tocino y Queso</comida>
+            <cena img="puerco_imgs">Puerco con Tocino y Queso</cena>
+        </dia>
+        <dia num="4">
+            <desayuno img="frias_imgs">Queso con Carnes Frias</desayuno>
+            <comida img="puerco_imgs">Puerco con Tocino y Queso</comida>
+            <cena img="puerco_imgs">Puerto con Tocino y Queso</cena>
+        </dia>
+        <dia num="5">
+            <desayuno img="frias_imgs">Queso con Carnes Frias</desayuno>
+            <comida img="puerco_imgs">Puerco con Tocino y Queso</comida>
+            <cena img="puerco_imgs">Puerto con Tocino y Queso</cena>
+        </dia>
+        <dia num="6">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="pescado_imgs" alt="si" opcion="Bistec de Res"  opcion_img="bistec_imgs">Pescado</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="7">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+    </semana>
+    <semana num="3" fase="Bajar Peso">
+        <dia num="1">
+            <desayuno img="frutas_imgs" fruta="si">3 Frutas</desayuno>
+            <comida img="frutas_imgs" fruta="si">4 Frutas</comida>
+            <cena img="bistec_imgs"  alt="si"  opcion="Pollo" opcion_img="pollo_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="2">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida  img="burguer_imgs">Hamburguesa</comida>
+            <cena img="bistec_imgs"  >Bistec de Res</cena>
+        </dia>
+        <dia num="3">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="bistec_imgs">Bistec de Res</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="4">
+            <desayuno  img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+        <dia num="5">
+            <desayuno img="bistec_imgs">Bistec de Res</desayuno>
+            <comida img="carnehuevos_imgs" alt="si" opcion="Pescado" opcion_img="pescado_imgs">Carne deshebrada con Huevo</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="6">
+            <desayuno img="bistec_imgs">Bistec de Res</desayuno>
+            <comida img="frutas_imgs" fruta="si">4 Frutas</comida>
+            <cena img="frutas_imgs" fruta="si">3 frutas</cena>
+        </dia>
+        <dia num="7">
+            <desayuno img="frutas_imgs" fruta="si">2 Frutas</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+    </semana>
+    <semana num="4" fase="Mantenimiento">
+        <dia num="1">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="bistec_imgs">Bistec de Res</comida>
+            <cena img="bistec_imgs" alt="si"  opcion="Pollo" opcion_img="pollo_imgs" >Bistec de Res</cena>
+        </dia>
+        <dia num="2">
+            <desayuno img="huevos_imgs">Huevos con Queso</desayuno>
+            <comida img="burguer_imgs">Hamburguesa</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="3">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="bistec_imgs">Bistec de Res</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="4">
+            <desayuno img="burguer_imgs">Hamburguesa</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+        <dia num="5">
+            <desayuno img="bistec_imgs">Bistec de Res</desayuno>
+            <comida img="carnehuevos_imgs" alt="si" opcion="Pescado" opcion_img="pescado_imgs">Carne deshebrada con Huevo</comida>
+            <cena img="bistec_imgs">Bistec de Res</cena>
+        </dia>
+        <dia num="6">
+            <desayuno img="bistec_imgs">Bistec de Res</desayuno>
+            <comida img="frutas_imgs" fruta="si">4 Frutas</comida>
+            <cena img="frutas_imgs" fruta="si">3 frutas</cena>
+        </dia>
+        <dia num="7">
+            <desayuno  img="frutas_imgs" fruta="si">2 Frutas</desayuno>
+            <comida img="pollo_imgs">Pollo</comida>
+            <cena img="pollo_imgs">Pollo</cena>
+        </dia>
+    </semana>
+</porskin>

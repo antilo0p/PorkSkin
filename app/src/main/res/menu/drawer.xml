@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dieta"
+            android:checked="false"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="@string/menu_my_meals" />
+        <item
+            android:id="@+id/status"
+            android:checked="false"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="@string/menu_state" />
+
+        <item
+            android:id="@+id/recipes"
+            android:checked="false"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="@string/menu_recipes" />
+
+        <item
+            android:id="@+id/drinks"
+            android:checked="false"
+            android:icon="@drawable/ic_local_drink_black_24dp"
+            android:title="@string/menu_drinks" />
+
+        <item
+            android:id="@+id/allowed"
+            android:checked="false"
+            android:icon="@drawable/ic_mood_black_24dp"
+            android:title="@string/menu_allowed" />
+
+        <item
+            android:id="@+id/disallowed"
+            android:checked="false"
+            android:icon="@drawable/ic_mood_bad_black_24dp"
+            android:title="@string/menu_not_allowed" />
+        <item
+            android:id="@+id/health"
+            android:checked="false"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="@string/menu_health" />
+        <item
+            android:id="@+id/configure"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_configure" />
+
+    </group>
+</menu>
