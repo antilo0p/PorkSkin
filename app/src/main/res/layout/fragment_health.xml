@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/recomendaciones_de_salud"
+        android:id="@+id/strHealthTitle"
+        android:textStyle="bold"
+        android:clickable="false"
+
+        />
+
+    <Space
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/acerca_de_la_dieta"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:clickable="false"
+
+        android:textColor="@color/colorAccent"
+        android:typeface="normal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+
+        android:id="@+id/editText"
+        android:text="@string/acerca_dieta"
+        android:textAlignment="inherit"
+        android:inputType="none" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/precauciones"
+        android:id="@+id/textView2"
+        android:clickable="false"
+
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="@string/precaucionesText"
+        android:textAlignment="inherit"
+        android:clickable="false"
+
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:clickable="false"
+
+        android:text="@string/advertencia_tiempo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:clickable="false"
+        android:text="@string/advertencia_diabetes" />
+</LinearLayout>

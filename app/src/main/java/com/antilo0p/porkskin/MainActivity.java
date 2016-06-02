@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
 
                     case R.id.dieta:
+                        toolbar.setTitle("Mi Dieta");
                         Toast.makeText(getApplicationContext(),"Dieta Selected",Toast.LENGTH_SHORT).show();
                         // OneFragment fragment = new  OneFragment();
                         // MealsListActivity fragment = new MealsListActivity();
@@ -105,36 +106,48 @@ public class MainActivity extends AppCompatActivity {
                         //.commit();
                         return true;
                     case R.id.status:
+                        toolbar.setTitle("Status");
                         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                         fragmentTransaction.replace(R.id.containerView,new OneFragment()).commit();
                         Toast.makeText(getApplicationContext(),"Status Selected",Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.recipes:
-                        Toast.makeText(getApplicationContext(),"Recetas Selected",Toast.LENGTH_SHORT).show();
-                        Intent mintent = new Intent(getApplicationContext(), MealsListActivity.class);
-                        startActivity(mintent);
+                        //Toast.makeText(getApplicationContext(),"Recetas Selected",Toast.LENGTH_SHORT).show();
+                        //Intent mintent = new Intent(getApplicationContext(), MealsListActivity.class);
+                        //startActivity(mintent);
+                        toolbar.setTitle("Recetas");
+                        FragmentTransaction rfragmentTransaction = mFragmentManager.beginTransaction();
+                        rfragmentTransaction.replace(R.id.containerView,new PayFragment()).commit();
                         return true;
                     case R.id.drinks:
-                        Snackbar snackbar = Snackbar
-                                .make(findViewById(R.id.overview_coordinator_layout), "Drinks Selected", Snackbar.LENGTH_LONG);
-                        snackbar.show();
+                        //Snackbar snackbar = Snackbar
+                           //     .make(findViewById(R.id.overview_coordinator_layout), "Drinks Selected", Snackbar.LENGTH_LONG);
+                        //snackbar.show();
+                        toolbar.setTitle("Bebidas");
+                        FragmentTransaction dfragmentTransaction = mFragmentManager.beginTransaction();
+                        dfragmentTransaction.replace(R.id.containerView,new SoonFragment()).commit();
                         return true;
                     case R.id.allowed:
-                        Toast.makeText(getApplicationContext(),"Permitidas Selected",Toast.LENGTH_SHORT).show();
+                        toolbar.setTitle("Alimentos Permitidos");
+                        //Toast.makeText(getApplicationContext(),"Permitidas Selected",Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.disallowed:
-                        Toast.makeText(getApplicationContext(),"NO Permitidas Selected",Toast.LENGTH_SHORT).show();
+                        toolbar.setTitle("Alimentos No Permitidos");
+                        //Toast.makeText(getApplicationContext(),"NO Permitidas Selected",Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.health:
-                        Toast.makeText(getApplicationContext(),"Salud Selected",Toast.LENGTH_SHORT).show();
+                        toolbar.setTitle("Recomendaciones de Salud");
+                        FragmentTransaction hfragmentTransaction = mFragmentManager.beginTransaction();
+                        hfragmentTransaction.replace(R.id.containerView,new HealthFragment()).commit();
                         return true;
                     case R.id.configure:
-                        Toast.makeText(getApplicationContext(),"Configurar Selected",Toast.LENGTH_SHORT).show();
+                        toolbar.setTitle("Configuracion");
+                        //Toast.makeText(getApplicationContext(),"Configurar Selected",Toast.LENGTH_SHORT).show();
                         Intent sintent = new Intent(getApplicationContext(), DietSetupActivity.class);
                         startActivity(sintent);
                         return true;
                     default:
-                        Toast.makeText(getApplicationContext(),"Something is Wrong",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"42",Toast.LENGTH_SHORT).show();
                         return true;
 
                 }
