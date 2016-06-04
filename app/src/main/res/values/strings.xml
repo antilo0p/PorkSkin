@@ -61,4 +61,9 @@
     <string name="advertencia_tiempo">No utilice la dieta por tiempo prolongado, el tiempo adecuado es de un mes, consulte a un nutriologo si necesita bajar mas de peso</string>
     <string name="advertencia_diabetes">Si tienes diabetes consulta a tu medico antes de hacer la dieta</string>
     <string name="diabetes">Personas con Diabetes</string>
+    <string name="ingrediente">Ingrediente</string>
+    <string name="nombre_ingrediente">Ingrediente</string>
+    <string name="carbohidratos">Carbohidratos</string>
+    <string name="carbs">14</string>
+    <string name="total_ingredients">Ingredientes totales</string>
 </resources>

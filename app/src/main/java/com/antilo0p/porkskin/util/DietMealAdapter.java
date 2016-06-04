@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +16,6 @@ import com.antilo0p.porkskin.models.DietMeal;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
-import java.util.StringTokenizer;
 
 /**
  * Created by rigre on 07/05/2016.
@@ -102,7 +100,7 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
         public MealCardHolder(View v){
             super(v);
             cv = (CardView)v.findViewById(R.id.card_view);
-            vTitle = (TextView) v.findViewById(R.id.mealName);
+            vTitle = (TextView) v.findViewById(R.id.ingredienteName);
             vDescription = (TextView) v.findViewById(R.id.mealContent);
             vType = (TextView) v.findViewById(R.id.mealOverImgTxt);
             vThumb = (ImageView) v.findViewById(R.id.thumbnail);

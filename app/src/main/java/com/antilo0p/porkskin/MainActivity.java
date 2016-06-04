@@ -17,11 +17,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.antilo0p.porkskin.util.AllowedTabsFragment;
+import com.antilo0p.porkskin.util.DisAllowedTabsFragment;
 import com.antilo0p.porkskin.util.TabsFragment;
 
 import java.util.ArrayList;
@@ -95,8 +98,8 @@ public class MainActivity extends AppCompatActivity {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
 
                     case R.id.dieta:
-                        toolbar.setTitle("Mi Dieta");
-                        Toast.makeText(getApplicationContext(),"Dieta Selected",Toast.LENGTH_SHORT).show();
+                        toolbar.setTitle("Mis Comidas");
+                        Toast.makeText(getApplicationContext(), "Tu dieta", Toast.LENGTH_SHORT).show();
                         // OneFragment fragment = new  OneFragment();
                         // MealsListActivity fragment = new MealsListActivity();
                         FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
@@ -104,12 +107,18 @@ public class MainActivity extends AppCompatActivity {
                         //  android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         //     fragmentTransaction.replace(R.id.content,fragment);
                         //.commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().hide();
+                        }
                         return true;
                     case R.id.status:
                         toolbar.setTitle("Status");
                         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                         fragmentTransaction.replace(R.id.containerView,new OneFragment()).commit();
                         Toast.makeText(getApplicationContext(),"Status Selected",Toast.LENGTH_SHORT).show();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.recipes:
                         //Toast.makeText(getApplicationContext(),"Recetas Selected",Toast.LENGTH_SHORT).show();
@@ -118,30 +127,50 @@ public class MainActivity extends AppCompatActivity {
                         toolbar.setTitle("Recetas");
                         FragmentTransaction rfragmentTransaction = mFragmentManager.beginTransaction();
                         rfragmentTransaction.replace(R.id.containerView,new PayFragment()).commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.drinks:
-                        //Snackbar snackbar = Snackbar
-                           //     .make(findViewById(R.id.overview_coordinator_layout), "Drinks Selected", Snackbar.LENGTH_LONG);
-                        //snackbar.show();
+                        Snackbar snackbar = Snackbar
+                                .make(findViewById(R.id.overview_coordinator_layout), "Lo sentimos, pero el alcochol no esta permitido", Snackbar.LENGTH_LONG);
+                        snackbar.show();
                         toolbar.setTitle("Bebidas");
                         FragmentTransaction dfragmentTransaction = mFragmentManager.beginTransaction();
                         dfragmentTransaction.replace(R.id.containerView,new SoonFragment()).commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.allowed:
                         toolbar.setTitle("Alimentos Permitidos");
-                        //Toast.makeText(getApplicationContext(),"Permitidas Selected",Toast.LENGTH_SHORT).show();
+                        FragmentTransaction afragmentTransaction = mFragmentManager.beginTransaction();
+                        afragmentTransaction.replace(R.id.containerView, new AllowedTabsFragment()).commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.disallowed:
                         toolbar.setTitle("Alimentos No Permitidos");
-                        //Toast.makeText(getApplicationContext(),"NO Permitidas Selected",Toast.LENGTH_SHORT).show();
+                        FragmentTransaction dafragmentTransaction = mFragmentManager.beginTransaction();
+                        dafragmentTransaction.replace(R.id.containerView, new DisAllowedTabsFragment()).commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.health:
                         toolbar.setTitle("Recomendaciones de Salud");
                         FragmentTransaction hfragmentTransaction = mFragmentManager.beginTransaction();
                         hfragmentTransaction.replace(R.id.containerView,new HealthFragment()).commit();
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         return true;
                     case R.id.configure:
                         toolbar.setTitle("Configuracion");
+                        if (getSupportActionBar() != null) {
+                            getSupportActionBar().show();
+                        }
                         //Toast.makeText(getApplicationContext(),"Configurar Selected",Toast.LENGTH_SHORT).show();
                         Intent sintent = new Intent(getApplicationContext(), DietSetupActivity.class);
                         startActivity(sintent);
@@ -163,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
         fab = (FloatingActionButton) findViewById(R.id.overview_floating_action_button);
         mRecyclerView = (RecyclerView) findViewById(R.id.cardList);
         if (mRecyclerView != null) {
+            Log.d("MainAct", "RecyclerView found");
         }
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -189,8 +219,11 @@ public class MainActivity extends AppCompatActivity {
         super.onPostCreate(savedInstanceState);
         actionBarDrawerToggle.syncState();
         if (toolbar != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setHomeButtonEnabled(true);
+            }
+
         }
     }
 
