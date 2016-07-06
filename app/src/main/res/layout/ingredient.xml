@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,43 +20,46 @@
     <TextView
         android:id="@+id/titleIngredient"
         android:textColor="@color/colorAccent"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NombreIngrediente" />
+        android:text="@string/nombreingrediente" />
 
     <TextView
-        android:id="@+id/genre"
+        android:id="@+id/carbsStr"
         android:layout_below="@+id/titleIngredient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Carbohidratos:" />
+        android:textColor="@android:color/black"
+        android:text="@string/cantidadStr" />
 
     <TextView
         android:id="@+id/nmbrCarbs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
-        android:text="NN"
-        android:layout_alignTop="@+id/genre"
-        android:layout_toRightOf="@+id/genre"
-        android:layout_toEndOf="@+id/genre"
+        android:text="@string/nn"
+        android:layout_alignTop="@+id/carbsStr"
+        android:layout_toRightOf="@+id/carbsStr"
+        android:layout_toEndOf="@+id/carbsStr"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp" />
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/IngListImgBtn"
-        android:src="@drawable/ic_search_black_24dp"
+        android:text="@string/busca_recetas"
+        android:id="@+id/ImgListImgBtnSearch"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/busca_recetas"
+        android:layout_alignWithParentIfMissing="false"
         android:layout_alignBottom="@+id/nmbrCarbs"
-        android:layout_toRightOf="@+id/nmbrCarbs"
-        android:layout_toEndOf="@+id/nmbrCarbs"
-        android:layout_marginLeft="169dp"
-        android:layout_marginStart="169dp"
-        android:background="@android:color/transparent" />
+        android:layout_alignRight="@+id/titleIngredient"
+        android:layout_alignEnd="@+id/titleIngredient"
+        android:layout_below="@+id/titleIngredient" />
 
 </RelativeLayout>
+</LinearLayout>

@@ -57,4 +57,73 @@
         <item>@drawable/carmesfrias</item>
         <item>@drawable/quesosfrias</item>
     </string-array>
+    <string-array name="allowed_induccion">
+        <item>Carne de Res, lo que desees</item>
+        <item>Carne de Pollo, lo que desees</item>
+        <item>Carne de Pescado, lo que desees</item>
+        <item>Carne de Puerco, lo que desees</item>
+        <item>Carnes Frias, lo que desees</item>
+        <item>Quesos, cuando toque</item>
+        <item>Vegetales, menos de 10 carbohidratos</item>
+        <item>Frutas, menos de 10 carbohidratos</item>
+        <item>Azucar, menos de 10 carbohidratos</item>
+    </string-array>
+    <string-array name="allowed_bajar_peso">
+        <item>Carne de Res, lo que desees</item>
+        <item>Carne de Pollo, lo que desees</item>
+        <item>Carne de Pescado, lo que desees</item>
+        <item>Carne de Puerco, lo que desees</item>
+        <item>Carnes Frias, lo que desees</item>
+        <item>Quesos, cuando toque</item>
+        <item>Vegetales, menos de 15 carbohidratos</item>
+        <item>Frutas, menos de 15 carbohidratos</item>
+        <item>Azucar, menos de 15 carbohidratos</item>
+    </string-array>
+    <string-array name="allowed_mantenimiento">
+        <item>Carne de Res, lo que desees</item>
+        <item>Carne de Pollo, lo que desees</item>
+        <item>Carne de Pescado, lo que desees</item>
+        <item>Carne de Puerco, lo que desees</item>
+        <item>Carnes Frias, lo que desees</item>
+        <item>Vegetales, menos de 30 carbohidratos</item>
+        <item>Frutas, Una vez a la semana</item>
+        <item>Azucar, menos de 20 carbohidratos</item>
+        <item>Alcohol o Vino, 1 o 2 copas</item>
+    </string-array>
+    <string-array name="disallowed_induccion">
+        <item>Carbohidratos, no mas de 15gr</item>
+        <item>Refrescos, depende de los carbohidratos</item>
+        <item>Dulces, nada</item>
+        <item>Pan, nada</item>
+        <item>Carnes Frias, cuando toque</item>
+        <item>Quesos, cuando toque</item>
+        <item>Vegetales, depende de los carbohidratos</item>
+        <item>Frutas, depende de los carbohidratos</item>
+        <item>Azucar, depende de los carbohidratos</item>
+        <item>Alcohol o Vino, nada</item>
+    </string-array>
+    <string-array name="disallowed_bajar_peso">
+        <item>Carbohidratos, no mas de 15gr</item>
+        <item>Refrescos, depende de los carbohidratos</item>
+        <item>Dulces, nada</item>
+        <item>Pan, nada</item>
+        <item>Carnes Frias, cuando toque</item>
+        <item>Quesos, cuando toque</item>
+        <item>Vegetales, depende de los carbohidratos</item>
+        <item>Frutas, depende de los carbohidratos</item>
+        <item>Azucar, depende de los carbohidratos</item>
+        <item>Alcohol o Vino, nada</item>
+    </string-array>
+    <string-array name="disallowed_mantenimiento">
+        <item>Carbohidratos, no mas de 45gr</item>
+        <item>Refrescos, depende de los carbohidratos</item>
+        <item>Dulces, depende de los carbohidratosa</item>
+        <item>Pan, depende de los carbohidratos</item>
+        <item>Carnes Frias, cuando toque</item>
+        <item>Quesos, cuando toque</item>
+        <item>Vegetales, depende de los carbohidratos</item>
+        <item>Frutas, depende de los carbohidratos</item>
+        <item>Azucar, depende de los carbohidratos</item>/item>
+        <item>Alcohol o Vino, 1 o 2 copas</item>
+    </string-array>
 </resources>

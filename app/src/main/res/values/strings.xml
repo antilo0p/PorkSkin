@@ -64,6 +64,10 @@
     <string name="ingrediente">Ingrediente</string>
     <string name="nombre_ingrediente">Ingrediente</string>
     <string name="carbohidratos">Carbohidratos</string>
-    <string name="carbs">14</string>
+    <string name="cantidad">14</string>
     <string name="total_ingredients">Ingredientes totales</string>
+    <string name="cantidadStr">Cantidad:</string>
+    <string name="nombreingrediente">NombreIngrediente</string>
+    <string name="nn">NN</string>
+    <string name="busca_recetas">Busca recetas</string>
 </resources>

@@ -20,7 +20,7 @@ import java.util.Locale;
 /**
  * Created by rigre on 07/05/2016.
  */
-public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCardHolder> {
+public class DietIngredientCardAdapter extends RecyclerView.Adapter<DietIngredientCardAdapter.IngredientCardHolder> {
     private Context context;
     List<DietMeal> meals;
 
@@ -30,7 +30,7 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
     private static final SimpleDateFormat formatterTime = new SimpleDateFormat(
             "yyyy-MM-dd HH:mm", Locale.ENGLISH);
 
-    public DietMealAdapter(Context context, List<DietMeal> meals){
+    public DietIngredientCardAdapter(Context context, List<DietMeal> meals) {
         this.context = context;
         this.meals = meals;
     }
@@ -43,30 +43,30 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
 
     // TODO: Validate displayed data, NOT OK currently
     @Override
-    public void onBindViewHolder(MealCardHolder mealCardHolder, int i) {
+    public void onBindViewHolder(IngredientCardHolder ingredientCardHolder, int i) {
         DietMeal dm = meals.get(i);
         Resources res = context.getResources();
         String strDescription;
         String strTitle = String.format(res.getString(R.string.meal_week_name_title), dm.getName());
-        strDescription = String.format(res.getString(R.string.meal_description), dm.getMealDaytime(), dm.getMeal() );
+        strDescription = String.format(res.getString(R.string.meal_description), dm.getMealDaytime(), dm.getMeal());
 
-        mealCardHolder.vTitle.setText(strTitle);
-        mealCardHolder.vDescription.setText(strDescription);
+        ingredientCardHolder.vTitle.setText(strTitle);
+        ingredientCardHolder.vDescription.setText(strDescription);
         if (dm.getDietWeek() != null) {
-            mealCardHolder.vType.setText(dm.getDietWeek().getPhase());
-        } else{
-            mealCardHolder.vType.setText(dm.getDietWeek().getName());
+            ingredientCardHolder.vType.setText(dm.getDietWeek().getPhase());
+        } else {
+            ingredientCardHolder.vType.setText(dm.getDietWeek().getName());
         }
 
-        switch (dm.getMeal()){
+        switch (dm.getMeal()) {
             case "Huevos con Queso":
-                mealCardHolder.vThumb.setImageResource(R.drawable.eggs);
+                ingredientCardHolder.vThumb.setImageResource(R.drawable.eggs);
                 break;
             case "Hamburguesa":
-                mealCardHolder.vThumb.setImageResource(R.drawable.bgribeye);
+                ingredientCardHolder.vThumb.setImageResource(R.drawable.bgribeye);
                 break;
             case "Pollo":
-                mealCardHolder.vThumb.setImageResource(R.drawable.chiken);
+                ingredientCardHolder.vThumb.setImageResource(R.drawable.chiken);
                 break;
             default:
                 break;
@@ -75,12 +75,12 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
     }
 
     @Override
-    public MealCardHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+    public IngredientCardHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.
                 from(viewGroup.getContext()).
                 inflate(R.layout.mealcard, viewGroup, false);
 
-        return new MealCardHolder(itemView);
+        return new IngredientCardHolder(itemView);
     }
 
     @Override
@@ -88,7 +88,7 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
         super.onAttachedToRecyclerView(recyclerView);
     }
 
-    public static  class MealCardHolder extends RecyclerView.ViewHolder {
+    public static class IngredientCardHolder extends RecyclerView.ViewHolder {
         protected CardView cv;
         protected TextView vTitle;
         protected TextView vType;
@@ -97,9 +97,9 @@ public class DietMealAdapter extends RecyclerView.Adapter<DietMealAdapter.MealCa
         protected String vTipo;
         protected String vWeek;
 
-        public MealCardHolder(View v){
+        public IngredientCardHolder(View v) {
             super(v);
-            cv = (CardView)v.findViewById(R.id.card_view);
+            cv = (CardView) v.findViewById(R.id.card_view);
             vTitle = (TextView) v.findViewById(R.id.mealName);
             vDescription = (TextView) v.findViewById(R.id.mealContent);
             vType = (TextView) v.findViewById(R.id.mealOverImgTxt);

@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                         FragmentTransaction afragmentTransaction = mFragmentManager.beginTransaction();
                         afragmentTransaction.replace(R.id.containerView, new AllowedTabsFragment()).commit();
                         if (getSupportActionBar() != null) {
-                            getSupportActionBar().show();
+                            getSupportActionBar().hide();
                         }
                         return true;
                     case R.id.disallowed:
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                         FragmentTransaction dafragmentTransaction = mFragmentManager.beginTransaction();
                         dafragmentTransaction.replace(R.id.containerView, new DisAllowedTabsFragment()).commit();
                         if (getSupportActionBar() != null) {
-                            getSupportActionBar().show();
+                            getSupportActionBar().hide();
                         }
                         return true;
                     case R.id.health:

@@ -3,26 +3,24 @@ package com.antilo0p.porkskin.models;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.Date;
-
 /**
  * Created by rigre on 07/05/2016.
  */
 public class DietIngredient implements Parcelable {
     private int id;
     private String name;
-    private int carbs;
+    private String cantidad;
     private int img;
     private int allowed;
     private String fase;
 
 
-    public DietIngredient(String name, int carbs, int img, int allow, String phase) {
+    public DietIngredient(String name, String cantidad, int img, int allow, String fase) {
         this.name = name;
-        this.carbs = carbs;
+        this.cantidad = cantidad;
         this.img = img;
         this.allowed = allow;
-        this.fase = phase;
+        this.fase = fase;
 
     }
 
@@ -32,12 +30,12 @@ public class DietIngredient implements Parcelable {
 
     }
 
-    public int getCarbs() {
-        return carbs;
+    public String getCantidad() {
+        return cantidad;
     }
 
-    public void setCarbs(int carbs) {
-        this.carbs = carbs;
+    public void setCantidad(String cantidad) {
+        this.cantidad = cantidad;
     }
 
     public int getImg() {
@@ -64,19 +62,13 @@ public class DietIngredient implements Parcelable {
         this.fase = fase;
     }
 
-    public static Creator<DietIngredient> getCREATOR() {
-        return CREATOR;
-    }
-
-
     private DietIngredient(Parcel in) {
         super();
         this.id = in.readInt();
         this.name = in.readString();
-        this.carbs = in.readInt();
+        this.cantidad = in.readString();
         this.img = in.readInt();
         this.allowed = in.readInt();
-
         this.fase = in.readString();
     }
 
@@ -101,8 +93,8 @@ public class DietIngredient implements Parcelable {
 
     @Override
     public String toString() {
-        return "Ingredient [id=" + id + ", name=" + name + ", carbs="
-                + carbs + ", fase=" + fase + "]";
+        return "Ingredient [id=" + id + ", name=" + name + ", cantidad="
+                + cantidad + ", fase=" + fase + "]";
     }
 
     @Override
@@ -136,7 +128,8 @@ public class DietIngredient implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(getId());
         dest.writeString(getName());
-        dest.writeInt(getCarbs());
+        dest.writeString(getCantidad());
+        dest.writeInt(getImg());
         dest.writeInt(getAllowed());
         dest.writeString(getFase());
 
